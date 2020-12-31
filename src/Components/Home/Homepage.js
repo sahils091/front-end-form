@@ -18,13 +18,20 @@ const Homepage = () => {
       </section>
       <section className="home__input">
         <form className="home__input-form">
+        <div className=" home__input-error--wrapper">
+        <p className=" home__input-error--blurb">
+              Please enter a valid email address.
+          </p>  
+        </div>
+        
           <div className="home__input-wrapper">
+         
             <input
               className="home__input-email"
               name="email"
               placeholder="Your Email Address * "
               type="email"
-              required="true"
+              required={true}
             />
             <select
               className="home__input-interest"
@@ -61,7 +68,10 @@ const Homepage = () => {
               </option>
             </select>
           </div>
-          <button className="home__input-btn">Sign Up Now <i></i></button>
+          <button className="home__input-btn">
+            Sign Up Now{" "}
+            <i className="fa fa-caret-right home__input-btn--icon"></i>
+          </button>
         </form>
       </section>
     </main>
