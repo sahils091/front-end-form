@@ -61,6 +61,7 @@ const Homepage = () => {
               </option>
             </select>
           </div>
+          <button className="home__input-btn">Sign Up Now <i></i></button>
         </form>
       </section>
     </main>
