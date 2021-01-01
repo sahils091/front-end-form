@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./homepage.scss";
+import * as EmailValidator from "email-validator";
 
 const Homepage = () => {
   const [error, setError] = useState(false);
@@ -10,7 +11,7 @@ const Homepage = () => {
     setSubmit(true);
   };
   const emailValidation = (email) => {
-    if (email.includes("@")) {
+    if (EmailValidator.validate(email)) {
       setError(false);
       return true;
     } else {
@@ -24,7 +25,6 @@ const Homepage = () => {
     setLoading(true);
     let emailValue = e.target.email.value;
     let interestValue = e.target.interest.value;
-    console.log(emailValidation(emailValue));
     if (!emailValidation(emailValue)) {
       return;
     } else {
