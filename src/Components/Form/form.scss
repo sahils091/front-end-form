@@ -1,0 +1,109 @@
+.form {
+  width: 100%;
+
+  &__input-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  &__input-email {
+    width: 50%;
+    margin-right: 1rem;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    background-color: whitesmoke;
+    color: #797979;
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1rem;
+    height: 4rem;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input-interest {
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='15' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    color: #797979;
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1rem;
+    height: 4rem;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-position: 95% center;
+    background-size: 1rem;
+    background-size: contain;
+    overflow: hidden;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__input-btn {
+    height: 4rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 100%;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #d02035;
+    border: none;
+    cursor: pointer;
+    &--icon {
+      margin-left: 0.5rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__input-error--wrapper {
+    width: 49%;
+  }
+
+  &__input-error--blurb {
+    font-family: "Merriweather", serif;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0.3125rem;
+    text-align: right;
+    display: none;
+  }
+  &__input-error--conditional {
+    font-family: "Merriweather", serif;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0.3125rem;
+    text-align: right;
+    display: inherit;
+  }
+  &__input-email--conditional {
+    border: 3px solid #d02035;
+    outline: none;
+    width: 50%;
+    margin-right: 1rem;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    background-color: whitesmoke;
+    color: #797979;
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1rem;
+    height: 4rem;
+  }
+  &__btn--conditional {
+    visibility: hidden;
+  }
+}
